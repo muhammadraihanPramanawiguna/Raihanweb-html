@@ -1,15 +1,71 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
     <meta name="author" content="raihan">
     <title>Form Tugas HTML</title>
+	<style>
+	
+
+	body{
+		/*background-color: lightblue;*/
+		background-image:url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0zMDktYWV3LTAxM18xXzEuanBn.jpg");
+		background-size: cover;
+	}
+	h1{ 
+	text-align:center;
+	color : darkblue;
+	font-style:italic;
+	font-size:45;
+	}
+	.h1-merah{
+		color:red;
+	}
+	#h1-kuning{
+		color:yellow;
+	}
+	textarea,select,input[type="text"],[type="email"],[type="date"],[type="file"],[type="tel"]{
+	border-radius=15px;
+	background-color: lightblue;
+	color:darkblue;
+	padding:10px;
+	width:90%;
+	border-color:darkblue;
+	}
+	*{
+	color:white;
+	font-family:times new roman;
+	}
+	.button{
+	background-color:lightblue;
+	padding:5px;
+	font-weight:bold;
+	border-radius:5px;
+	border-color:darkblue;
+	}
+	.button:hover{
+	background-color:red;
+	padding:5px;
+	font-weight:bold;
+	border-radius:5px;
+	border-color:red;
+	color:white;
+	}
+	table{
+background-color:darkgreen;
+opacity:95%;
+}
+
+	</style>
 </head>
 <body>
     <h1>Form Pendaftaran</h1>
+	<h1 class="h1-merah"> data mahasiswa </h1>
+	<h1 id="h1-kuning"> data mahasiswa </h1>
+	
     <form method="" action="">
         <table>
 		<tr>
-		<td width="50%" valign="top">
+		<td width="50%" valign="top" >
 		<fieldset>
             <legend>Data Pribadi</legend>
             <table>
@@ -83,7 +139,7 @@
             </table>
         </fieldset>
 		</td>
-		<td>
+		<td  width="50%" valign="top" >
         <fieldset>
             <legend>Data Orang Tua</legend>
             <table>
@@ -130,8 +186,9 @@
                 </tr>
                 <tr>
                     <td colspan="2" align="left">
-					<input type="submit" name="simpan" id="simpan">
-                    <input type="reset" name="reset" id="reset"></td>
+					<input class="button" type="submit" name="simpan" id="simpan">
+                    <input class="button" type="reset" name="reset" id="reset"></td>
+					
                
             </table>
         </fieldset>
